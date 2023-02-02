@@ -1,22 +1,22 @@
 """EX01 - Chardle - A cute step toward Wordle."""
 
-__author__ = 730605045
+__author__ = "730605045"
 
-word: str =input("Enter a 5-character word: ")
+word: str = input("Enter a 5-character word: ")
 
 if (len(word) != 5):
     print("Error: Word must contain 5 characters")
     quit()
     
-letter: str= input("Enter a single character: ")
+letter: str = input("Enter a single character: ")
 
 if len(letter) != 1:
     print("Error: Character must be a single character.")
     exit()
 
-print ("Searching for " + letter + " in " + word)
+print("Searching for " + letter + " in " + word)
 
-matches: int=0
+matches: int = 0
 
 if (word[0] == letter):
     print(letter + " found at index 0")
