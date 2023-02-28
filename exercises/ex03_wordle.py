@@ -1,8 +1,6 @@
 "Full Working version of wordle using structure functions"
 
-__author__ = 730604045
-
-
+__author__ = "730604045"
 
 def contains_char(chr_word: str, chr: str) -> bool:
     # search if the single character of the second string is in first string)
@@ -26,10 +24,7 @@ def contains_char(chr_word: str, chr: str) -> bool:
                     search_idx = search_idx + 1   
             if (search_word is True):
                 return True
-            else:
-                # no character matches
-                return False
-
+    return False
 
 def emojified(guess: str, secert_word: str) -> str:
     #call a color of emoji if search is true, return string of colored emoji boxes
